@@ -1,11 +1,7 @@
-
-// Bardzo prosty program – bez zatrzymywania na ReadKey / ReadLine,
-// żeby nie wieszał się w środowiskach online z limitem czasu (np. „timeout 7 mono”).
-
 using System;
 using System.Collections.Generic;
 
-namespace LatwyProjekt
+namespace Projekt
 {
     class Osoba
     {
@@ -45,8 +41,8 @@ namespace LatwyProjekt
                 new Osoba("Adam", "Nowak")    // brak daty urodzenia
             };
 
-            // 2) Jeśli podano nazwisko w argumentach – szukamy tylko tego nazwiska.
-            //    Jeśli nie podano, wypisujemy wszystkich.
+            // Jeśli podano nazwisko w argumentach to wtedy szukamy tylko tego nazwiska.
+            //  Jeśli nie podano, wypisujemy wszystkich.
             if (args.Length > 0)
             {
                 string szukane = args[0];
